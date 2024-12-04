@@ -8,7 +8,7 @@ import javafx.util.Duration;
 
 import java.io.IOException;
 import java.util.Objects;
-
+// start
 public class ViewChanger {
 
     public ViewChanger() {
