@@ -77,11 +77,11 @@ Here are some key API endpoints implemented in the Spring Boot backend:
 
 ## Database Design
 The database uses a relational schema with the following tables:
-1. **Users**: Stores user information (ID, name, email, role).
+1. **Users**: Stores user information (ID, name, role, email, password).
    ![](./images/users-table.png)
 2. **Roles**: Stores role information (role_id, role_name).
    ![](./images/roles-table.png)
-3. **Books**: Stores book details (ID, title, author, status).
+3. **Books**: Stores book details (ID, title, author, ISBN, status).
    ![](./images/book-table.png)
 4. **Transactions**: Tracks borrowing of books.
    ![](./images/transactions-table.png)
@@ -98,7 +98,7 @@ The JavaFX application provides a seamless user experience with:
   ![](./images/library-page.png)
 - User account where you can see your rented books and return them.
   ![](./images/user-account.png)
-  - Administrator account where you can control books and users. 
+- Administrator account where you can control books and users.
   ![](./images/admin_account.png)
 
 
@@ -121,9 +121,12 @@ The JavaFX application provides a seamless user experience with:
 ## How to Run
 1. Clone the repository and navigate to the project directory.
 2. Start the backend server:
-   ![](./images/SpringBoot-run.png)
+
+![](./images/SpringBoot-run.png)
+
 3. Start the JavaFX application:
-   ![](./images/JavaFX-run.png)
+
+![](./images/JavaFX-run.png)
   
 
 ---
