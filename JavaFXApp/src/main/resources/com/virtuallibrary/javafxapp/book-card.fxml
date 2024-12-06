@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="123.0" prefWidth="600.0" style="-fx-background-color: #6C757D; -fx-background-radius: 12; -fx-border-insets: 20 0 0 0;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virtuallibrary.javafxapp.Controllers.BookCardController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="123.0" prefWidth="600.0" style="-fx-background-color: #393cb0; -fx-background-radius: 12; -fx-border-insets: 20 0 0 0;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virtuallibrary.javafxapp.Controllers.BookCardController">
    <children>
       <Label fx:id="titleLabel" layoutX="19.0" layoutY="13.0" prefHeight="27.0" prefWidth="463.0" textFill="WHITE">
          <font>
@@ -26,7 +26,7 @@
          <font>
             <Font name="System Italic" size="14.0" />
          </font></Label>
-      <Button fx:id="rentThisBookButton" layoutX="493.0" layoutY="51.0" mnemonicParsing="false" onAction="#onRentThisBookClick" style="-fx-background-color: #007BFF;" text="Rent this book" textFill="WHITE">
+      <Button fx:id="rentThisBookButton" layoutX="493.0" layoutY="51.0" mnemonicParsing="false" onAction="#onRentThisBookClick" style="-fx-background-color: #f9b5da;" text="Rent this book" textFill="#901257">
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
          </cursor></Button>
@@ -35,7 +35,7 @@
          <font>
             <Font size="14.0" />
          </font></Label>
-      <Button fx:id="deleteBookButton" layoutX="559.0" layoutY="14.0" mnemonicParsing="false" onAction="#onDeleteBookClick" prefHeight="25.0" prefWidth="26.0" style="-fx-background-color: #DC3545;">
+      <Button fx:id="deleteBookButton" layoutX="559.0" layoutY="14.0" mnemonicParsing="false" onAction="#onDeleteBookClick" prefHeight="25.0" prefWidth="26.0" style="-fx-background-color: #901257;">
          <graphic>
             <ImageView fitHeight="16.0" fitWidth="15.0" onDragDetected="#onDeleteBookClick" pickOnBounds="true" preserveRatio="true">
                <image>

@@ -11,9 +11,9 @@
 
 <AnchorPane fx:id="addUserAnchorPain" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virtuallibrary.javafxapp.Controllers.AddUserController">
     <children>
-        <ToolBar prefHeight="40.0" prefWidth="800.0" style="-fx-background-color: #6C757D;">
+        <ToolBar prefHeight="40.0" prefWidth="800.0" style="-fx-background-color: #901257;">
             <items>
-                <Button fx:id="backRedirectButton" mnemonicParsing="false" onAction="#onBackRedirectClick" style="-fx-background-color: #007BFF;" text="&lt; Back" textFill="WHITE" />
+                <Button fx:id="backRedirectButton" mnemonicParsing="false" onAction="#onBackRedirectClick" style="-fx-background-color: #ffffff;" text="&lt; Back" textFill="#901257" />
                 <Label prefHeight="18.0" prefWidth="258.0" />
                 <ImageView fitHeight="24.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -56,7 +56,7 @@
             </font>
         </Label>
         <TextField fx:id="passwordField" layoutX="119.0" layoutY="345.0" prefHeight="26.0" prefWidth="562.0" />
-        <Button fx:id="addUserButton" layoutX="119.0" layoutY="417.0" mnemonicParsing="false" onAction="#onAddUserClick" prefHeight="30.0" prefWidth="562.0" style="-fx-background-color: #007BFF;" text="Add a new user" textFill="WHITE">
+        <Button fx:id="addUserButton" layoutX="119.0" layoutY="417.0" mnemonicParsing="false" onAction="#onAddUserClick" prefHeight="30.0" prefWidth="562.0" style="-fx-background-color: #901257;" text="Add a new user" textFill="WHITE">
             <font>
                 <Font size="14.0" />
             </font>

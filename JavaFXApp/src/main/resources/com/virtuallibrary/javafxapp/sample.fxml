@@ -12,7 +12,7 @@
 
 <AnchorPane fx:id="sampleAnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virtuallibrary.javafxapp.Controllers.SampleController">
    <children>
-      <ToolBar prefHeight="40.0" prefWidth="800.0" style="-fx-background-color: #6C757D;">
+      <ToolBar prefHeight="40.0" prefWidth="800.0" style="-fx-background-color: #901257;">
         <items>
             <ImageView fitHeight="24.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -24,7 +24,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Button fx:id="accountRedirectButton" mnemonicParsing="false" onAction="#onAccountRedirectClick" style="-fx-background-color: #007BFF;" text="My account" textFill="RED" />
+            <Button fx:id="accountRedirectButton" mnemonicParsing="false" onAction="#onAccountRedirectClick" style="-fx-background-color: #ffffff;" text="My account" textFill="#901257f7" />
             <Label prefHeight="18.0" prefWidth="314.0" />
         </items>
       </ToolBar>

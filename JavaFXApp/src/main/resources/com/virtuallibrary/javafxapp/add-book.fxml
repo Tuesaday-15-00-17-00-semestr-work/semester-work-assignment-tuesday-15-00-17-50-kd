@@ -11,9 +11,9 @@
 
 <AnchorPane fx:id="addBookAnchorPain" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virtuallibrary.javafxapp.Controllers.AddBookController">
    <children>
-      <ToolBar prefHeight="40.0" prefWidth="800.0" style="-fx-background-color: #6C757D;">
+      <ToolBar prefHeight="40.0" prefWidth="800.0" style="-fx-background-color: #901257;">
         <items>
-            <Button fx:id="backRedirectButton" mnemonicParsing="false" onAction="#onBackRedirectClick" style="-fx-background-color: #007BFF;" text="&lt; Back" textFill="WHITE" />
+            <Button fx:id="backRedirectButton" mnemonicParsing="false" onAction="#onBackRedirectClick" style="-fx-background-color: #ffffff;" text="&lt; Back" textFill="#901257" />
             <Label prefHeight="18.0" prefWidth="258.0" />
             <ImageView fitHeight="24.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -62,7 +62,7 @@
          </font>
       </Label>
       <TextField fx:id="availableCopiesField" layoutX="207.0" layoutY="329.0" prefHeight="26.0" prefWidth="448.0" />
-      <Button fx:id="addBookButton" layoutX="147.0" layoutY="402.0" mnemonicParsing="false" onAction="#onAddBookClick" prefHeight="30.0" prefWidth="506.0" style="-fx-background-color: #007BFF;" text="Add a new book to the library" textFill="WHITE">
+      <Button fx:id="addBookButton" layoutX="147.0" layoutY="402.0" mnemonicParsing="false" onAction="#onAddBookClick" prefHeight="30.0" prefWidth="506.0" style="-fx-background-color: #901257;" text="Add a new book to the library" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>

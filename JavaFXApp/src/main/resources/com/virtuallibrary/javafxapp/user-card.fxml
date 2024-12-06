@@ -8,9 +8,9 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="123.0" prefWidth="600.0" style="-fx-background-color: #6C757D; -fx-background-radius: 12; -fx-border-insets: 20 0 0 0;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virtuallibrary.javafxapp.Controllers.UserCardController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="123.0" prefWidth="600.0" style="-fx-background-color: #393cb0; -fx-background-radius: 12; -fx-border-insets: 20 0 0 0;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virtuallibrary.javafxapp.Controllers.UserCardController">
    <children>
-      <Button fx:id="deleteUserButton" layoutX="539.0" layoutY="49.0" mnemonicParsing="false" onAction="#onDeleteUserClick" prefHeight="25.0" prefWidth="26.0" style="-fx-background-color: #DC3545;">
+      <Button fx:id="deleteUserButton" layoutX="539.0" layoutY="49.0" mnemonicParsing="false" onAction="#onDeleteUserClick" prefHeight="25.0" prefWidth="26.0" style="-fx-background-color: #901257;">
          <graphic>
             <ImageView fitHeight="16.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
                <image>
