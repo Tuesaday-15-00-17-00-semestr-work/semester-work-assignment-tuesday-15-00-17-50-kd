@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DatabaseService {
-    private final String jdbcUrl = "jdbc:sqlite:/C:\\Users\\Admin\\JavaProjects\\virtuallibrary.db";
+    private final String jdbcUrl = "jdbc:sqlite:/C:\\Users\\Admin\\Desktop\\virtuallibrary.db";
     private Connection connection;
     private Statement statement;
 
