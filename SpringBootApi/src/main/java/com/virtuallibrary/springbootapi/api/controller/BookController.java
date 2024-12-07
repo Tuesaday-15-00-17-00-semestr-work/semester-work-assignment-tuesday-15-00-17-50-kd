@@ -45,6 +45,16 @@ public class BookController {
         return new ResponseEntity<>(books, HttpStatus.OK);
     }
 
+    @GetMapping("/search")
+    public ResponseEntity<List<Book>> searchBooks(@RequestParam String keyword) throws SQLException {
+        List<Book> books = bookService.searchBooks(keyword);
+        if (books == null || books.isEmpty()) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(books, HttpStatus.OK);
+    }
+
+
     @PostMapping("/create")
     public ResponseEntity<Book> createBook(@RequestBody Book book) throws SQLException {
         Book createdBook = bookService.createBook(book);
@@ -66,4 +76,5 @@ public class BookController {
         }
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
+
 }

@@ -83,6 +83,34 @@ public class DatabaseService {
             }
         }
     }
+    private Book mapResultSetToBook(ResultSet rs) throws SQLException {
+        return new Book(
+                rs.getInt("book_id"),
+                rs.getString("title"),
+                rs.getString("author"),
+                rs.getString("isbn_number"),
+                rs.getInt("available_copies")
+        );
+    }
+
+    public List<Book> searchBooks(String keyword) throws SQLException {
+        String sql = "SELECT * FROM books WHERE title LIKE ? OR author LIKE ? OR isbn_number LIKE ?";
+        PreparedStatement stmt = connection.prepareStatement(sql);
+        String searchKeyword = "%" + keyword + "%";
+        stmt.setString(1, searchKeyword);
+        stmt.setString(2, searchKeyword);
+        stmt.setString(3, searchKeyword);
+
+        ResultSet rs = stmt.executeQuery();
+
+        List<Book> books = new ArrayList<>();
+        while (rs.next()) {
+            books.add(mapResultSetToBook(rs));
+        }
+        return books;
+    }
+
+
 
     public Book createBook(Book book) throws SQLException {
         String sql = "INSERT INTO BOOKS (title, author, isbn_number, available_copies) VALUES (?, ?, ?, ?)";

@@ -28,6 +28,11 @@ public class BookService {
         return db.getAllBooks();
     }
 
+    public List<Book> searchBooks(String keyword) throws SQLException {
+        return db.searchBooks(keyword);
+    }
+
+
     public boolean updateBook(Book book) throws SQLException {
         return db.updateBook(book);
     }
